@@ -7,13 +7,13 @@ The modified version used partial expansion + Upper Confidence bounds applied to
 ## How to run
 
 ### For Manual play
-`python3 p2_play.py <Arg1> <Arg2>`  
-Args `random_bot, rollout_bot, mcts_vanilla, mcts_modified`
+`$ python3 p2_play.py <Arg1> <Arg2>`  
+Args: random_bot, rollout_bot, mcts_vanilla, mcts_modified
 
 
 ### For Simulation
-`python3 p2_sim.py <Arg1> <Arg2>`  
-Args `random_bot, rollout_bot, mcts_vanilla, mcts_modified`
+`$ python3 p2_sim.py <Arg1> <Arg2>`  
+Args: random_bot, rollout_bot, mcts_vanilla, mcts_modified
 
 ### Modifiable Values
 `rounds = 10` in `p2_sim.py`  
