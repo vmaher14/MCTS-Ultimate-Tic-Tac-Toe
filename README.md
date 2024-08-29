@@ -2,7 +2,7 @@
 A bot that uses the Monte Carlo Tree Search algorithm to play ultimate tic-tac-toe.
 
 ## Modifications
-The modified version used partial expansion + Upper Confidence bounds applied to Trees (UCT) + a heuristic. With this, instead of looping through every action that was available, the algorithm would only do a subset of moves. Then instead of always doing a random rollout, the heuristic would loop through the possible moves and would check for if there was a winning move available. If there was, it would immediate pick it, otherwise it would perform the rollout as normal. With the modification, the MCTS bot would win against the vanilla bot over 95% of the time, resulting in a major improvement on the vanilla algorithm. 
+The modified version uses partial expansion + Upper Confidence bounds applied to Trees (UCT) + a heuristic. With this, instead of looping through every action that was available, the algorithm only does a subset of moves. Then instead of always doing a random rollout, the heuristic loops through the possible moves and checks for if there is a winning move available. If there is, it immediately picks it, otherwise it performs the rollout as normal. With the modification, the MCTS bot wins against the vanilla bot over 95% of the time, resulting in a major improvement on the vanilla algorithm. 
 
 ## How to run
 
