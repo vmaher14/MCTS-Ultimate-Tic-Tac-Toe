@@ -24,24 +24,24 @@ if len(sys.argv) != 3:
 
 p1 = sys.argv[1]
 if p1 not in players:
-    print("p1 not in "+players.keys().join(","))
+    print("p1 not in "+", ".join(players.keys()))
     exit(1)
 p2 = sys.argv[2]
 if p2 not in players:
-    print("p2 not in "+players.keys().join(","))
+    print("p2 not in "+", ".join(players.keys()))
     exit(1)
 
 player1 = players[p1]
 player2 = players[p2]
 
-rounds = 100
+rounds = 10
 wins = {'draw':0, 1:0, 2:0}
 
 start = time()  # To log how much time the simulation takes.
 for i in range(rounds):
 
     print("")
-    print("Round %d, fight!" % i)
+    print(f"Round {i+1}, fight!")
 
     state = state0
     last_action = None

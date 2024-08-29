@@ -4,8 +4,8 @@ from p2_t3 import Board
 from random import choice
 from math import sqrt, log
 
-num_nodes = 1000
-explore_faction = 2.
+num_nodes = 100
+explore_faction = 2
 
 def traverse_nodes(node: MCTSNode, board: Board, state, bot_identity: int):
     """ Traverses the tree until the end criterion are met.

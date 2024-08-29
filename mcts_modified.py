@@ -4,7 +4,7 @@ from random import choice
 from math import sqrt, log
 from time import time
 
-num_nodes = 1000
+num_nodes = 100
 explore_factor = 2
 sub_set_size = 10
 
