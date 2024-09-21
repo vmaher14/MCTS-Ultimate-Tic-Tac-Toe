@@ -33,7 +33,7 @@ player1 = players[p1]
 player2 = players[p2]
 
 rounds = 10
-wins = {'draw':0, 1:0, 2:0}
+wins = {'draw':0, p1:0, p2:0}
 
 start = time()  # To log how much time the simulation takes.
 for i in range(rounds):
@@ -53,10 +53,10 @@ for i in range(rounds):
     final_score = board.points_values(state)
     winner = 'draw'
     if final_score[1] == 1:
-        winner = 1
+        winner = p1
     elif final_score[2] == 1:
-        winner = 2
-    print("The %s bot wins this round! (%s)" % (winner, str(final_score)))
+        winner = p2
+    print("%s bot wins this round! (%s)" % (winner, str(final_score)))
     wins[winner] = wins.get(winner, 0) + 1
 
 print("")
