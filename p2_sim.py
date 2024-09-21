@@ -5,14 +5,12 @@ import mcts_vanilla
 import mcts_modified
 import random_bot
 import rollout_bot
-import mcts_vanilla_exp
 
 players = dict(
     random_bot=random_bot.think,
     rollout_bot=rollout_bot.think,
     mcts_vanilla=mcts_vanilla.think,
     mcts_modified=mcts_modified.think,
-    mcts_vanilla_exp=mcts_vanilla_exp.think,
 )
 
 board = p2_t3.Board()
